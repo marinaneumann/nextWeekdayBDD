@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/scripts.js"></script>
+	<title> Monthly Madness </title>
+</head>
+<body>
+	<div class ="container">
+		<h1> Another Day, Another Week, Another Month In <span style="color:green; font-family:Verdana; font-size:30px">2014</span></h1>
+		<div class ="row">
+			<!-- <div class ="col-md-6" -->
+					<form id="nextOccurence">
+						<div class ="form-group">
+							<label id="weekday" > Enter weekday:</label>
+							<input id="inputtedweekDay" placeholder="Example:friday" type="text">
+						</div> <!--closes form-group-->
+						<!-- <button type="button" class="btn btn-primary">Primary</button> -->
+					</form> <!--closes form nextOccurence-->
+					<button type="button" class="btn btn-primary">Submit</button>
+					<div id="result">
+						<h2>The next <span id="weekdayInput"></span> will be <span id="occurence"></span>.</h2>
+					</div> <!--closes result-->
+			<!-- </div>  --><!-- closes column -->
+		</div> <!--closes row div-->
+	</div> <!-- closes container div -->
+</body>
+</html>
