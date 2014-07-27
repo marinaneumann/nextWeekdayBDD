@@ -20,11 +20,10 @@ var dayMonth = function(day) {
 		newdate = todayDate + add;
 	};
 	var totalmonthDays = monthDays[todayMonth]
-	todayMonth++;
+		todayMonth++;
 	if (newdate > totalmonthDays) {
 		newdate = newdate - totalmonthDays;
 		todayMonth++;
-
 	};
 	return(todayMonth  + "/" + newdate + "/2014");
 };
@@ -36,8 +35,7 @@ $(document).ready(function() {
 	$("form#nextOccurence").submit(function(event) {
 		event.preventDefault();
 		var userInput =$("input#inputtedweekDay").val();
-		var inputtedDay = $("result#weekdayInput").val();
-		$("span#weekdayInput").text(dayMonth(inputtedDay));
+		$("span#weekdayInput").text(userInput);
 		$("span#occurence").text(dayMonth(userInput));
 		$("#result").show();
 	});
